@@ -1,0 +1,1070 @@
+@font-face {
+    font-family: "Montserrat Black";
+    src: url("../fonts/Montserrat-Black.eot") format("embedded-opentype"),
+        url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.woff2") format("woff2"),
+        url("../fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham Pro Black";
+    src: url("../fonts/GothamPro-Black.eot") format("embedded-opentype"),
+        url("../fonts/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro-Black.woff2") format("woff2"),
+        url("../fonts/GothamPro-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham Pro Bold";
+    src: url("../fonts/GothamPro-Bold.eot") format("embedded-opentype"),
+        url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.woff2") format("woff2"),
+        url("../fonts/GothamPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham Pro Regular";
+    src: url("../fonts/GothamPro.eot") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"),
+        url("../fonts/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost Bold";
+    src: url("../fonts/Jost-Bold.eot") format("embedded-opentype"), url("../fonts//GothamPro.woff") format("woff"),
+        url("../fonts/Jost-Bold.woff2") format("woff2"), url("../fonts/Jost-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost Semi Bold";
+    src: url("../fonts/Jost-SemiBold.eot") format("embedded-opentype"),
+        url("../fonts/Jost-SemiBold.woff") format("woff"), url("../fonts/Jost-SemiBold.woff2") format("woff2"),
+        url("../fonts/Jost-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost Meduim";
+    src: url("../fonts/Jost-Medium.eot") format("embedded-opentype"), url("../fonts/Jost-Medium.woff") format("woff"),
+        url("../fonts/Jost-Medium.woff2") format("woff2"), url("../fonts/Jost-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.header {
+    padding: 22px 0 21px 0;
+    background: #454545;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+}
+
+a.active::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 10px;
+    background: #abd3de;
+    position: absolute;
+    top: -100%;
+    left: -25%;
+}
+
+.nav-logo::before {
+    left: 15% !important;
+}
+
+.nav-item:nth-child(2)::before {
+    left: -35% !important;
+}
+
+.nav-item:nth-child(3)::before {
+    left: -20% !important;
+}
+
+.nav-item:nth-child(4)::before {
+    left: -15% !important;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.tel {
+    font-family: "Gotham Pro Bold";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tel:hover {
+    text-decoration: underline;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    column-gap: 8px;
+}
+
+.nav {
+    display: flex;
+    column-gap: 65px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-family: "Gotham Pro Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    color: #ffffff;
+    position: relative;
+}
+
+.nav-logo {
+    font-family: "Gotham Pro Black";
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 19px;
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.main {
+    background-image: url(../img//main-background.png);
+    position: relative;
+    overflow: hidden;
+}
+
+.main::after {
+    content: "";
+    background-image: url(../img/background-after.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 4%;
+}
+
+.sale {
+    position: relative;
+    z-index: 1;
+    padding: 142px 0 115px 0;
+}
+
+.sale__title {
+    font-family: "Montserrat Black";
+    font-weight: 900;
+    font-size: 84px;
+    line-height: 76px;
+    color: #454545;
+    margin-bottom: 12px;
+    max-width: 630px;
+}
+
+.sale__subitile {
+    font-family: "Jost Semi Bold";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 52px;
+    color: #454545;
+    max-width: 431px;
+}
+
+.sale__button {
+    font-family: "Jost Meduim";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+    color: #454545;
+    background: #abd3de;
+    box-shadow: 0px 0px 15.5593px 2.74576px rgba(0, 0, 0, 0.1);
+    border-radius: 29px;
+    max-width: 378px;
+    border: none;
+    cursor: pointer;
+    padding: 19px 41px 25px 44px;
+}
+
+.sale__button:hover {
+    transform: scale(1.1);
+}
+
+.sale__button a {
+    text-decoration: none;
+    font-family: "Jost Meduim";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+    color: #454545;
+    white-space: pre;
+}
+
+.about {
+    padding: 115px 0 70px 0;
+    position: relative;
+}
+
+.about-card {
+    background: #abd3de;
+    border-radius: 38.254px;
+    padding: 42px 31px 50px 74px;
+    margin-bottom: 95px;
+}
+
+.about__title {
+    font-family: "Gotham Pro Black";
+    font-weight: 900;
+    font-size: 61.2064px;
+    line-height: 55px;
+    color: #454545;
+    margin-bottom: 12px;
+}
+
+.about__subtitle {
+    font-family: "Jost Meduim";
+    font-weight: 500;
+    font-size: 34.4286px;
+    line-height: 41px;
+    color: #454545;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages-item {
+    background: #ffffff;
+    box-shadow: 0px 0px 12.3839px 7.62085px rgba(0, 0, 0, 0.07);
+    border-radius: 48.5829px;
+    width: 30%;
+    text-align: center;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advantages-img-wrapper {
+    margin-bottom: 30px;
+}
+
+.advantages__title {
+    font-family: "Jost Meduim";
+    font-weight: 500;
+    font-size: 28.5782px;
+    line-height: 41px;
+    color: #454545;
+}
+
+.services {
+    padding: 62px 0 67px 0;
+    text-align: center;
+    position: relative;
+}
+
+.services__main-title {
+    font-family: "Gotham Pro Black";
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 58px;
+    color: #454545;
+    text-align: left;
+    margin-bottom: 44px;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    row-gap: 38px;
+}
+
+.services-item {
+    width: 40%;
+    background: #ffffff;
+    box-shadow: 0px 0px 13px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 48px;
+    text-align: center;
+    display: flex;
+    column-gap: 22px;
+    align-items: center;
+    padding: 20px 0 20px 40px;
+}
+
+.services-item:hover {
+    transform: scale(1.08);
+}
+
+.brush_second {
+    display: none;
+}
+
+.services-img-wrapper {
+    flex: 0 0 40%;
+}
+
+.services__button {
+    background: #abd3de;
+    box-shadow: 0px 0px 13px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    padding: 30px 65px;
+}
+
+.services__button:hover {
+    transform: scale(1.1);
+}
+
+.services__title {
+    font-family: "Gotham Pro Regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #454545;
+    word-spacing: 500px;
+}
+
+.services__link {
+    font-family: "Gotham Pro Regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #454545;
+    text-decoration: none;
+}
+
+.reviews {
+    background-image: url(../img//main-background.png);
+    padding: 48px 0 51px 0;
+}
+
+.reviews-card {
+    background: #abd3de;
+    border-radius: 36.254px;
+    display: flex;
+    padding: 35px 63px 43px 64px !important;
+}
+
+.reviews__title {
+    font-family: "Montserrat Black";
+    font-weight: 900;
+    font-size: 58.0063px;
+    line-height: 53px;
+    color: #454545;
+}
+
+.footer {
+    text-align: center;
+    background: #454545;
+    padding: 42px 0;
+}
+
+.footer__title {
+    font-family: "Gotham Pro Black";
+    font-weight: 900;
+    font-size: 50.0857px;
+    line-height: 48px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.footer-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-whatsapp-link {
+    margin-left: 18px;
+    font-family: "Gotham Pro Regular";
+    font-weight: 400;
+    font-size: 23.3712px;
+    line-height: 22px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-tel-link {
+    margin-left: 18px;
+    font-family: "Gotham Pro Regular";
+    font-weight: 400;
+    font-size: 23.3712px;
+    line-height: 22px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.spaula_first {
+    position: absolute;
+    top: 10%;
+    right: -12%;
+    animation-name: anim;
+    animation-duration: 4s;
+}
+
+@keyframes anim {
+    0% {
+        right: 15%;
+    }
+    100% {
+        right: -12%;
+    }
+}
+
+@keyframes animDesktop {
+    0% {
+        right: 15%;
+    }
+    100% {
+        right: -20%;
+    }
+}
+
+@keyframes animSmallDesktop {
+    0% {
+        right: 15%;
+    }
+    100% {
+        right: -30%;
+    }
+}
+
+@keyframes animMobile {
+    0% {
+        top: 25%;
+    }
+    100% {
+        top: 130%;
+    }
+}
+
+@keyframes animMobile1 {
+    0% {
+        top: 25%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+.spaula_second {
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+.mobile-arrow {
+    display: none;
+}
+
+.brush {
+    position: absolute;
+    top: -10%;
+    z-index: 1;
+}
+
+.helmet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #454545 !important;
+}
+
+.swiper-button-disabled {
+    display: none !important;
+}
+
+button:active {
+    background: #454545;
+}
+
+button:active a {
+    color: #fff;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav_bottom-active {
+    position: absolute;
+    background: #454545;
+    text-align: center;
+    display: flex !important;
+    flex-direction: column;
+    row-gap: 25px;
+    left: -1%;
+    top: 160%;
+    width: 177%;
+    padding: 20% 0 20px 0;
+}
+
+.mobile-nav_bottom-deactive {
+    display: none;
+}
+.menu-burger {
+    width: 20px;
+    height: 14px;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    transition: 0.2s;
+    transition-delay: 0.15s;
+}
+.menu-burger i {
+    display: block;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 2px;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+}
+.menu-burger:before,
+.menu-burger:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-origin: right bottom;
+}
+.menu-burger:after {
+    top: 100%;
+    transform-origin: right bottom;
+}
+.menu-burger--is-active {
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.2s;
+}
+.menu-burger--is-active i {
+    opacity: 0;
+    transition-delay: 0;
+}
+.menu-burger--is-active:after {
+    transform: rotate3d(0, 0, 1, 45deg) translate3d(-1px, 1px, 0);
+}
+.menu-burger--is-active:before {
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, 0, 0);
+}
+
+.menu-burger {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    margin: -7px 0 0 -10px;
+}
+
+.mobile-nav button {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: none;
+}
+
+.phone-mobile {
+    display: none;
+}
+
+.form {
+    padding: 150px 0 100px;
+    background-image: url(../img//main-background.png);
+}
+
+.item-wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 25%;
+}
+
+.form__button {
+    background: #abd3de;
+    box-shadow: 0px 0px 13px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: "Gotham Pro Regular";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #454545;
+}
+
+.form__button:hover {
+    transform: scale(1.1);
+}
+
+.form__label {
+    font-family: "Jost Meduim";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 41px;
+    color: #454545;
+}
+
+.form input {
+    font-family: "Jost Meduim";
+    font-weight: 500;
+    font-size: 16px;
+    color: #454545;
+}
+
+.thanks {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.thanks__title {
+    font-family: "Montserrat Black";
+    font-weight: 900;
+    font-size: 84px;
+    line-height: 76px;
+    color: #454545;
+    margin-bottom: 12px;
+}
+
+.thanks__subtitle {
+    font-family: "Montserrat Black";
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 120%;
+    color: #454545;
+    margin-bottom: 12px;
+}
+
+.thanks__link {
+    font-family: "Montserrat Black";
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 100%;
+    color: #111;
+}
+
+.thanks__link:hover {
+    color: #454545;
+}
+
+@media (max-width: 1400px) {
+    .spaula_first {
+        right: -20%;
+        animation-name: animDesktop;
+    }
+    .spaula_second {
+        right: -5%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        max-width: 1000px;
+    }
+    .spaula_first {
+        right: -30%;
+        animation-name: animSmallDesktop;
+    }
+    .sale__title {
+        max-width: 580px;
+    }
+    .brush {
+        left: -5%;
+    }
+    .spaula_second {
+        top: 20%;
+    }
+    .reviews__title {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .reviews-card {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        max-width: 900px;
+    }
+    .reviews__title {
+        max-width: 100%;
+    }
+    .reviews__img {
+        width: 100%;
+    }
+    .advantages-item {
+        height: 380px;
+        width: 32%;
+    }
+    .spaula_second {
+        top: 25%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 800px;
+    }
+    .advantages {
+        display: none;
+    }
+    .spaula_second {
+        display: none;
+    }
+    .helmet {
+        display: none;
+    }
+    .services-wrapper {
+        flex-direction: column;
+    }
+    .services-item {
+        width: 100%;
+        column-gap: 60px;
+        padding: 20px 0;
+    }
+    .services__title {
+        word-spacing: normal;
+    }
+    .services-img-wrapper {
+        flex: 0 0 30%;
+    }
+    .reviews__title {
+        max-width: 100%;
+    }
+
+    .reviews-card {
+        flex-direction: column;
+    }
+
+    .main::after {
+        content: "";
+        background-image: url(../img/background-after-mobile.png);
+        background-repeat: no-repeat;
+        display: block;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        rotate: 0deg;
+        width: 85%;
+        left: 5%;
+    }
+    .about {
+        padding-top: 670px;
+    }
+    .spaula_first {
+        rotate: 90deg;
+        right: -7%;
+        top: 130%;
+        animation-name: animMobile;
+        width: 115%;
+    }
+    .about-card {
+        position: relative;
+        z-index: 1;
+    }
+    .brush {
+        display: none;
+    }
+    .brush_second {
+        display: block;
+        transform: rotate(230deg);
+        position: absolute;
+        z-index: 1;
+        top: 83%;
+        right: -12%;
+    }
+    .sale__title {
+        max-width: none;
+    }
+    .sale__button a {
+        font-size: 25px;
+    }
+    .services__button {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        max-width: 700px;
+    }
+    .spaula_first {
+        right: -10%;
+    }
+    .nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+        position: relative;
+    }
+    .nav-logo {
+        white-space: nowrap;
+        margin-left: 50%;
+        z-index: 1;
+    }
+    .mobile-nav-active::after {
+        content: "";
+        background: #abd3de;
+        display: block;
+        height: 62px;
+        width: 173%;
+        position: absolute;
+    }
+    .menu-burger {
+        z-index: 1;
+    }
+    .phone {
+        display: none;
+    }
+    .phone-mobile {
+        display: block;
+    }
+    .header-wrapper {
+        align-items: center;
+    }
+    .swiper-button-next {
+        display: none !important;
+    }
+    .swiper-button-prev {
+        display: none !important;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .mobile-arrow {
+        display: flex;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+    .mobile-arrow-text {
+        margin-right: 5px;
+        font-family: "Gotham Pro Regular";
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 17px;
+        color: #454545;
+    }
+    a.active::before {
+        display: none;
+    }
+    .sale__button {
+        padding: 9px 20px 11px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        max-width: 600px;
+    }
+    .reviews-card {
+        padding: 0 !important;
+    }
+    .reviews__title {
+        padding: 10px 10px 0 10px;
+    }
+    .mobile-arrow {
+        margin-bottom: 20px;
+    }
+    .sale__title {
+        font-size: 70px;
+    }
+    .spaula_first {
+        right: -20%;
+        width: 130%;
+    }
+    .main::after {
+        right: 35%;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 500px;
+    }
+    .spaula_first {
+        right: -23%;
+        width: 140%;
+    }
+    .sale__title {
+        font-size: 42px;
+        line-height: 100%;
+    }
+    .sale__subitile {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    .about__title {
+        font-size: 42px;
+    }
+    .about__subtitle {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    .about-card {
+        margin-bottom: 0;
+        padding: 20px 30px;
+    }
+    .brush_second {
+        width: 60%;
+        top: 83%;
+        right: -30%;
+    }
+    .services__button a {
+        font-size: 25px;
+        white-space: pre;
+    }
+    .services__main-title {
+        font-size: 42px;
+    }
+    .services__title {
+        font-size: 25px;
+    }
+    .reviews__title {
+        font-size: 32px;
+        line-height: 120%;
+    }
+    .footer__title {
+        font-size: 35px;
+    }
+    .footer a {
+        font-size: 18px;
+    }
+    .main::after {
+        content: "";
+        background-image: url(../img/background-after-mobile.png);
+        background-repeat: no-repeat;
+        display: block;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        rotate: 0deg;
+        width: 85%;
+        left: 5%;
+    }
+    .thanks__title {
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .thanks__subtitle {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .thanks__link {
+        font-size: 18px;
+        line-height: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        max-width: 400px;
+    }
+    .services-item {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .spaula_first {
+        animation-name: animMobile1;
+        top: 100%;
+    }
+    .about {
+        padding-top: 550px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        max-width: 330px;
+    }
+    .about {
+        padding-top: 400px;
+    }
+    .brush_second {
+        width: 60%;
+        top: 89%;
+        right: -14%;
+    }
+}
