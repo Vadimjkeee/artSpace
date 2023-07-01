@@ -41,19 +41,16 @@ $("nav").on("click", "a", function (event) {
     $('body,html').animate({ scrollTop: top }, 800);
 });
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    spaceBetween: 100,
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+$(document).ready(function () {
+    var swiper = new Swiper('.swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 });
-
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
     let btnBurger = document.querySelector('.menu-burger');
