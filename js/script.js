@@ -55,13 +55,17 @@ const swiper = new Swiper('.swiper', {
 
 
 
-let btnBurger = document.querySelector('.menu-burger');
+document.addEventListener('DOMContentLoaded', function () {
+    let btnBurger = document.querySelector('.menu-burger');
+    if (btnBurger) {
+        btnBurger.addEventListener('click', function () {
+            let mobileMenu = document.querySelector('.mobile-nav_bottom');
+            let mobileNav = document.querySelector('.mobile-nav');
+            mobileMenu.classList.toggle('mobile-nav_bottom-active');
+            mobileMenu.classList.toggle('mobile-nav_bottom-deactive');
+            mobileNav.classList.toggle('mobile-nav-active');
+        });
+    }
+});
 
-btnBurger.addEventListener('click', function () {
-    let mobileMenu = document.querySelector('.mobile-nav_bottom');
-    mobileMenu.classList.toggle('mobile-nav_bottom-active');
-    mobileMenu.classList.toggle('mobile-nav_bottom-deactive');
-    let mobileNav = document.querySelector('.mobile-nav');
-    mobileNav.classList.toggle('mobile-nav-active')
-})
 
